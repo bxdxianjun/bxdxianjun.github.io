@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第二次作业</title>
+</head>
+<body>
+	<h1>Snapshots</h1>
+	<ul id="imagegallery">
+	  	<li>
+	   		 <a href="img/01.jpg" title="花" onclick="showPic(this);return false;">Chrysanthemum</a>
+	  	</li>
+	 	 <li>
+	    		<a href="img/02.jpg" title="花" onclick="showPic(this);return false;">Hydrangeas</a>
+	  	</li>
+	  	<li>
+	    		<a href="img/03.jpg" title="水母" onclick="showPic(this);return false;">Jellyfish</a>
+	  	</li>
+	  	<li>
+	    		<a href="img/04.jpg" title="考拉" onclick="showPic(this);return false;">Koala</a>
+	  	</li>
+	</ul>
+		<img id="placeholder" src="img/04.jpg" alt="my image gallery"/>
+		<script>
+			function showPic(whichPic){
+				var a=whichPic.getAttribute("href");
+				var b=document.getElementById("placeholder");
+				b.setAttribute("src",a);
+			}
+		</script>
+</body>
+</html>
